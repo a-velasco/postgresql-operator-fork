@@ -162,17 +162,17 @@ typecheck = ["mypy"]
 
 [[package]]
 name = "boto3"
-version = "1.35.13"
+version = "1.35.14"
 description = "The AWS SDK for Python"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "boto3-1.35.13-py3-none-any.whl", hash = "sha256:6e220eae161a4c0ed21e2561edcb0fd9603fa621692c50bc099db318ed3e3ad4"},
-    {file = "boto3-1.35.13.tar.gz", hash = "sha256:4af17bd7bada591ddaa835d774b242705210e5d45133e25bd73417daa42e53e7"},
+    {file = "boto3-1.35.14-py3-none-any.whl", hash = "sha256:c3e138e9041d59cd34cdc28a587dfdc899dba02ea26ebc3e10fb4bc88e5cf31b"},
+    {file = "boto3-1.35.14.tar.gz", hash = "sha256:7bc78d7140c353b10a637927fe4bc4c4d95a464d1b8f515d5844def2ee52cbd5"},
 ]
 
 [package.dependencies]
-botocore = ">=1.35.13,<1.36.0"
+botocore = ">=1.35.14,<1.36.0"
 jmespath = ">=0.7.1,<2.0.0"
 s3transfer = ">=0.10.0,<0.11.0"
 
@@ -181,13 +181,13 @@ crt = ["botocore[crt] (>=1.21.0,<2.0a0)"]
 
 [[package]]
 name = "botocore"
-version = "1.35.13"
+version = "1.35.14"
 description = "Low-level, data-driven core of boto 3."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "botocore-1.35.13-py3-none-any.whl", hash = "sha256:dd8a8bb1946187c8eb902a3b856d3b24df63917e4f2c61a6bce7f3ea9f112761"},
-    {file = "botocore-1.35.13.tar.gz", hash = "sha256:f7ae62eab44d731a5ad8917788378316c79c7bceb530a8307ed0f3bca7037341"},
+    {file = "botocore-1.35.14-py3-none-any.whl", hash = "sha256:24823135232f88266b66ae8e1d0f3d40872c14cd976781f7fe52b8f0d79035a0"},
+    {file = "botocore-1.35.14.tar.gz", hash = "sha256:8515a2fc7ca5bcf0b10016ba05ccf2d642b7cb77d8773026ff2fa5aa3bf38d2e"},
 ]
 
 [package.dependencies]
@@ -428,13 +428,13 @@ files = [
 
 [[package]]
 name = "cosl"
-version = "0.0.29"
+version = "0.0.31"
 description = "Utils for COS Lite charms"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "cosl-0.0.29-py3-none-any.whl", hash = "sha256:c9d503e04e417daf0304cfe6560ff46a7008246435d0a641433fce03d489cf82"},
-    {file = "cosl-0.0.29.tar.gz", hash = "sha256:d353d0ab5b1b1be871b435b410a0e1ee1d9ce055ce5c21c9c0d0e6b1e05af7ee"},
+    {file = "cosl-0.0.31-py3-none-any.whl", hash = "sha256:89485797874a0948b1d1daf9a2b561d7422de4ad05e603d352769dbcd077b718"},
+    {file = "cosl-0.0.31.tar.gz", hash = "sha256:b87824d6a725616a23db4b9a45742402e77e1e9be6c7247f5159db00208c3195"},
 ]
 
 [package.dependencies]
@@ -930,12 +930,12 @@ referencing = ">=0.31.0"
 
 [[package]]
 name = "juju"
-version = "3.5.0.0"
+version = "3.5.2.0"
 description = "Python library for Juju"
 optional = false
 python-versions = "*"
 files = [
-    {file = "juju-3.5.0.0.tar.gz", hash = "sha256:c69fbe63cb12991690787ce3d70812390bf3ca62b6c5e9ef15df00c1f03dd7e6"},
+    {file = "juju-3.5.2.0.tar.gz", hash = "sha256:dd9a36330e63acd8f62bf478fd7e385e51f44dc3918e7a67d0593fd054e1e80a"},
 ]
 
 [package.dependencies]
@@ -2520,4 +2520,4 @@ type = ["pytest-mypy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "c6167147c89eb390254d9374a2675f93d104a70d8741317d621cc55bc6670722"
+content-hash = "6860eb200c8cdf5e9fd1da4d0d53cf5217187cbcaa8ac942996f999344cd5c01"
