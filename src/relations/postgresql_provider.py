@@ -8,6 +8,7 @@ import logging
 from charms.data_platform_libs.v0.data_interfaces import (
     DatabaseProvides,
     DatabaseRequestedEvent,
+    PrematureDataAccessError,
 )
 from charms.postgresql_k8s.v0.postgresql import (
     INVALID_EXTRA_USER_ROLE_BLOCKING_MESSAGE,
@@ -199,11 +200,16 @@ class PostgreSQLProvider(Object):
             database = rel_data[relation_id].get("database")
             password = secret_data.get(relation_id, {}).get("password")
 
-            # Set the read/write endpoint.
-            self.database_provides.set_endpoints(
-                relation_id,
-                f"{self.charm.primary_endpoint}:{DATABASE_PORT}",
-            )
+            try:
+                # Set the read/write endpoint.
+                self.database_provides.set_endpoints(
+                    relation_id,
+                    f"{self.charm.primary_endpoint}:{DATABASE_PORT}",
+                )
+            except PrematureDataAccessError:
+                # The relation is not yet fullin initialized
+                # Updates should be performed on a later 'update-status' cycle
+                return
 
             # Set the read-only endpoint.
             self.database_provides.set_read_only_endpoints(
