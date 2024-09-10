@@ -83,7 +83,7 @@ PostgreSQL is a trademark or registered trademark of PostgreSQL Global Developme
 | 3 | h-integrate-db-with-your-charm | [Integrate a database with your charm](/t/11865) |
 | 3 | h-migrate-pgdump | [Migrate data via pg_dump](/t/12163) |
 | 3 | h-migrate-backup-restore | [Migrate data via backup/restore](/t/12164) |
-| 2 | h-async | [Cross-regional async replication]() |
+| 2 | h-async | [Cross-regional async replication](/t/15412) |
 | 3 | h-async-set-up | [Set up clusters](/t/13991) |
 | 3 | h-async-integrate | [Integrate with a client app](/t/13992) |
 | 3 | h-async-remove-recover | [Remove or recover a cluster](/t/13994) |
@@ -92,6 +92,7 @@ PostgreSQL is a trademark or registered trademark of PostgreSQL Global Developme
 | 2 | r-overview | [Overview](/t/13976) |
 | 2 | r-releases | [Release Notes]() |
 | 3 | r-all-releases | [All releases](/t/11875) |
+| 3 | r-revision-467-468 | [Revision 467/468](/t/15378) |
 | 3 | r-revision-429-430 | [Revision 429/430](/t/14067) |
 | 3 | r-revision-363 | [Revision 363](/t/13124) |
 | 3 | r-revision-351 | [Revision 351](/t/12823) |
